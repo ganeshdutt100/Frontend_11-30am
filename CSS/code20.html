@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .navbar {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            border-radius: 30px;
+            margin: 20px;
+        }
+
+        .logo {}
+
+        .list {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .bar {
+            display: none;
+            ;
+        }
+
+        /* heroSection */
+        .hero_section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #f0f0f0;
+            border-radius: 30px;
+            margin: 20px;
+            flex-direction: row-reverse;
+
+
+
+        }
+
+        .hero_text {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .hero_img img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+
+        @media only screen and (max-width:500px) {
+            .bar {
+                display: block;
+            }
+
+            .list {
+                display: none;
+
+            }
+
+            /* heroSection */
+            .hero_section {
+                flex-direction: column-reverse;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Project</li>
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </nav>
+
+    <!-- hero_section -->
+    <div class="hero_section">
+        <div class="hero_text">
+            <h1>Hero Text</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptates.</p>
+            <button>Contact Us</button>
+        </div>
+        <div class="hero_img">
+            <img src="https://img.freepik.com/free-vector/gradient-abstract-background_23-2149138850.jpg?ga=GA1.2.2096170301.1749892508&semt=ais_hybrid&w=740"
+                alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
