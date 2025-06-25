@@ -5,12 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            /* flex-wrap: wrap; */
+        }
+
+        .card {
+            width: 500px;
+            /* height: 500px; */
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+
+            text-align: center;
+        }
+
+        .card img {
+
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .card1 {
+            width: 300px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+
+            text-align: center;
+        }
+
+        .card1 img {
+
+            height: 200px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi modi perspiciatis nulla corporis, iure esse
-        nobis ipsum minima cumque facilis debitis labore animi dolorem non repellat nesciunt eius quasi itaque?</p>
+    <div class="cards">
+        <!-- card-1 -->
+        <div class="card">
+            <img src="https://img.freepik.com/free-vector/gradient-abstract-background_23-2149138850.jpg?ga=GA1.2.2096170301.1749892508&semt=ais_hybrid&w=740"
+                alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus, hic sed aspernatur odio, in,
+                cumque pariatur nihil aut odit quod! Ut vitae praesentium consectetur. Veniam minima veritatis
+                doloremque omnis.</p>
+            <button>Read More</button>
+            <div style="display: flex; justify-content: space-around; text-align: center; margin-top: 10px;">
+                <p style="border-right: 1px solid ; padding-right: 20px;">123</p>
+                <p style="border-right: 1px solid ; padding-right: 20px;">123</p>
+                <p>123</p>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="card1">
+                <img src="https://img.freepik.com/free-vector/gradient-abstract-background_23-2149138850.jpg?ga=GA1.2.2096170301.1749892508&semt=ais_hybrid&w=740"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus, hic sed aspernatur odio, in,
+                    cumque pariatur nihil aut odit quod! Ut vitae praesentium consectetur. Veniam minima veritatis
+                    doloremque omnis.</p>
+                <button>Read More</button>
+                <div style="display: flex; justify-content: space-around; text-align: center; margin-top: 10px;">
+                    <p style="border-right: 1px solid ; padding-right: 20px;">123</p>
+                    <p style="border-right: 1px solid ; padding-right: 20px;">123</p>
+                    <p>123</p>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="https://img.freepik.com/free-vector/gradient-abstract-background_23-2149138850.jpg?ga=GA1.2.2096170301.1749892508&semt=ais_hybrid&w=740"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus, hic sed aspernatur odio, in,
+                    cumque pariatur nihil aut odit quod! Ut vitae praesentium consectetur. Veniam minima veritatis
+                    doloremque omnis.</p>
+                <button>Read More</button>
+                <div style="display: flex; justify-content: space-around; text-align: center; margin-top: 10px;">
+                    <p style="border-right: 1px solid ; padding-right: 20px;">123</p>
+                    <p style="border-right: 1px solid ; padding-right: 20px;">123</p>
+                    <p>123</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
