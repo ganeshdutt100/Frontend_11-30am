@@ -48,9 +48,9 @@
 
     </style>
 </head>
-<body class="bg-gray-800 text-white">
+<body class="dark:bg-gray-800 dark:text-white">
 
-    <nav class="flex justify-around bg-gray-500 rounded-[40px] py-6 m-6">
+    <nav class="flex justify-around dark:bg-black bg-gray-500 rounded-[40px] py-6 m-6">
         <div class="logo font-bold">LOGO</div>
         <ul class="md:flex gap-8 hidden ">
             <li><a href="#" class="hover:text-black" >Home</a></li>
@@ -60,6 +60,7 @@
             <li><a href="#" class="hover:text-black" >Projects</a></li>
         </ul>
         <div class="bar text-3xl rotate-90 md:hidden">⏸️</div>
+        <button onclick="toggleDarkMode()" class=" cursor-pointer  bg-black text-white p-3 rounded-2xl">Dark Mode</button>
     </nav>
 
     <!-- heroSection -->
@@ -129,5 +130,11 @@
   Processing…
 </button> -->
 
+
+<script>
+  function toggleDarkMode(){
+    document.documentElement.classList.toggle('dark')
+  }
+</script>
 </body>
 </html>
