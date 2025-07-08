@@ -35,15 +35,59 @@
 // 1k
 
 
-let str  = prompt("Enter your name ")
+// let str  = prompt("Enter your name ")
 // alert(str)
 
-console.log("Hey Good Morning " + str );
+// console.log("Hey Good Morning " + str );
+
+// Number 
+// console.log(78.9);
+
+// String 
+// let value  = "Hello world "
+// console.log(value )
+
+// Boolean
+
+// let isTrue = true
+// let isFalse = false
+// console.log(isTrue)
+// console.log(isFalse)
+
+
+// null
+
+// let value1  = null
+// console.log(value1);
+
+
+// let value2 ;
+
+// value2= "String"
+
+// console.log(value2);
+
+
+// let value  = "Hello world "
+// value  = ''
 
 
 
+// let number  = 934893849384839849834834835834787n
+// console.log(number)
 
 
+
+// function fun(){
+//     console.log("i am Function ")
+// }
+// fun();
+
+
+function fun(a , b){
+    return console.log(a +  b)
+}
+fun(12 ,89);
 
 // comments  = ctrl + /
 
