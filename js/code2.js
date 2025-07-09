@@ -67,3 +67,6 @@
 // let  output  = (a % 2 == 0)? "even":"odd"
 // console.log(output);
 
+
+// let a = 2, b = 0;
+// console.log(a || b);
