@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <style>
+        .box{
+            /* box-shadow: 5px 5px 90px 10px rgb(255, 255, 255) ; */
+        /* opacity: .5; */
+        }
+        img{
+            /* filter: blur(10px); */
+            /* filter: brightness(100); */
+            /* filter: hue-rotate(190deg); */
+        }
+
+        /* table , tr , th ,td{
+          border: 1px solid white;
+          padding: 20px;
+          border-collapse: collapse;
+        } */
+
+        /* .box{
+            width: 50px;
+            height: 50px;
+            border: 2px solid white;
+            border-top-color: #1e2939;
+            border-radius: 50%;
+            transform: rotate(360deg);
+            transition: all .5s linear;
+
+            animation : rotate 2s linear infinite ;
+        
+        }
+
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: 360deg;
+            }
+            
+        } */
+
+
+    </style>
+</head>
+<body class="dark:bg-gray-800 dark:text-white">
+
+    <nav class="flex justify-around dark:bg-black bg-gray-500 rounded-[40px] py-6 m-6">
+        <div class="logo font-bold">LOGO</div>
+        <ul class="md:flex gap-8 hidden ">
+            <li><a href="#" class="hover:text-black" >Home</a></li>
+            <li><a href="#" class="hover:text-black" >About</a></li>
+            <li><a href="#" class="hover:text-black" >Contact</a></li>
+            <li><a href="#" class="hover:text-black" >Services</a></li>
+            <li><a href="#" class="hover:text-black" >Projects</a></li>
+        </ul>
+        <div class="bar text-3xl rotate-90 md:hidden">⏸️</div>
+        <button onclick="toggleDarkMode()" class=" cursor-pointer  bg-black text-white p-3 rounded-2xl">Dark Mode</button>
+    </nav>
+
+    <!-- heroSection -->
+     <div class="sec1 flex flex-col md:flex-row justify-center items-center gap-10 m-8">
+      <div class="text md:w-[500px] order-2 md:order-first">
+        <h1 class="text-3xl">Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, accusamus eius dicta maiores debitis nulla sed repudiandae expedita veritatis minima at eligendi nobis odio doloribus cupiditate consequuntur in quam voluptate.</p>
+        <button>Click me </button>
+      </div>
+      <div class="img">
+        <img src="https://cdn.pixabay.com/photo/2025/07/02/19/58/daisies-9693143_640.jpg" alt="" class="w-[300px] h-[300px]  md:w-[500px] rounded-full order-1 md:order-last">
+      </div>
+     </div>
+
+ <!-- <h1 class="text-[32px]">Lorem ipsum dolor sit amet.</h1>
+    <button class="bg-amber-400 text-black px-5 py-3 rounded-3xl">Click me </button> -->
+
+    <!-- <h1 class="text-white  font-mono text-8xl">Lorem ipsum dolor sit amet.</h1> -->
+    <!-- <div class="  box w-[200px] h-40 bg-blue-300 m-20 mx-64 my-56 p-[50px]   shadow-lg shadow-white opacity-40 hover:opacity-100 
+"></div> -->
+
+<!-- <img src="https://cdn.pixabay.com/photo/2016/03/27/07/08/man-1282232_1280.jpg" class="hue-rotate-180" alt=""> -->
+
+ <!-- <div class="box"></div> -->
+
+ <!-- <button type="button" class="bg-indigo-500 ..." disabled>
+  <svg class="mr-3 size-5 animate-spin ..." viewBox="0 0 24 24">
+
+  </svg>
+</button> -->
+
+  <!-- <span class="relative flex size-3">
+  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+  <span class="relative inline-flex size-4 rounded-full bg-sky-500"></span>
+</span> -->
+
+<!-- <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4">
+  <div class="flex animate-pulse space-x-4">
+    <div class="size-10 rounded-full bg-gray-200"></div>
+    <div class="flex-1 space-y-6 py-1">
+      <div class="h-2 rounded bg-gray-200"></div>
+      <div class="space-y-3">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-2 h-2 rounded bg-gray-200"></div>
+          <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+        </div>
+        <div class="h-2 rounded bg-gray-200"></div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- 
+<button type="button" class="bg-indigo-500 text-white px-4 py-2 rounded flex items-center" >
+  <svg class="mr-3 h-5 w-5 animate-spin text-white" viewBox="0 0 24 24">
+    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+  </svg>
+  Processing…
+</button> -->
+
+
+<!-- 
+ <button type="button" class="bg-indigo-500 ..." >
+  <svg class="mr-3 size-5 animate-spin ..." viewBox="0 0 24 24">
+   Lorem
+  </svg>
+  Processing…
+</button> -->
+
+
+<script>
+  function toggleDarkMode(){
+    document.documentElement.classList.toggle('dark')
+  }
+</script>
+</body>
+</html>
