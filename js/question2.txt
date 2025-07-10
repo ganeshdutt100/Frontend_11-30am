@@ -1,0 +1,84 @@
+ Basic Questions:
+
+1. Check if a number is positive or negative.
+
+   
+   // Write a program to check if a number is positive or negative using ifelse.
+   
+
+2. Find if a number is even or odd.
+
+   
+   // Write a JavaScript program that checks whether a number is even or odd using ifelse.
+   
+
+3. Check if the user is eligible to vote (age >= 18).
+
+   
+   // Use ifelse to determine if a person can vote based on age.
+   
+
+4. Find the greatest of two numbers.
+
+   
+   // Use ifelse to compare two numbers and find the greater one.
+   
+
+5. Check if a number is divisible by 5 and 11.
+
+   
+   // Use ifelse if to check if a number is divisible by both 5 and 11.
+   
+
+
+
+ Hard Questions:
+
+1. Find the largest of three numbers using nested ifelse.
+
+   
+   // Write a program to find the largest among three numbers using nested ifelse.
+   
+
+2. Grade system using marks:
+
+   
+   /
+   If marks > 90 => Grade A
+   If marks > 75 => Grade B
+   If marks > 50 => Grade C
+   Else => Fail
+   /
+   // Implement this logic using ifelse if.
+   
+
+3. Check if a year is a leap year.
+
+   
+   /
+   A year is leap year if:
+    divisible by 400 OR
+    divisible by 4 but not 100
+   /
+   // Write this using nested ifelse.
+   
+
+4. Check whether a character is a vowel, consonant, or invalid input.
+
+   
+   // Use ifelse if to check if an input is a vowel, consonant, or not an alphabet.
+   
+
+5. Login system (email and password check).
+
+   
+   /
+   If email is correct
+      if password is also correct => Login successful
+      else => Wrong password
+   Else => Invalid email
+   /
+   // Implement using nested ifelse.
+   
+
+
