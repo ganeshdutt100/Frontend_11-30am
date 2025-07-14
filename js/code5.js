@@ -1,8 +1,8 @@
 let correctEmail = "trainerganeshdutt@gmail.com"
 let correctPassword = "123456789"
 
-let email = "trainerganeshdutt@gmail.com"
-let password = "123456789"
+let email = prompt("Enter your email ")
+let password = prompt("Enter your password ")
 
 if(email ==  correctEmail){
  if(password ==  correctPassword){
