@@ -35,14 +35,47 @@
 //     console.log("Hello World 4");
 // })();
     
-(function(){
-    console.log("Hello World 5");
-})()
-let arrowFunction =  () => console.log("Hello World");
-let arrowFunction1 =  () =>{
-     console.log("Hello World");
-     console.log("Hello World");
-     console.log("Hello World");
-     console.log("Hello World");
+// (function(){
+//     console.log("Hello World 5");
+// })()
+// let arrowFunction =  () => console.log("Hello World");
+// let arrowFunction1 =  () =>{
+//      console.log("Hello World");
+//      console.log("Hello World");
+//      console.log("Hello World");
+//      console.log("Hello World");
+// }
+// arrowFunction1()
+
+
+function cal(){
+    let first = 10;
+let op = "/";
+let second = 10;
+
+let result;
+
+switch(op){
+    case "+":
+        result = first + second;
+        break;
+    case "-":
+        result = first - second;
+        break;
+    case "*":
+        result = first * second;
+        break;
+    case "/":
+        if(second == 0){
+            result = "Cannot divide by zero";
+        }
+        else
+        result = first / second;
+        break;
+    default:
+        result = "Invalid Operator"
 }
-arrowFunction1()
+
+console.log(result);
+}
+cal();
