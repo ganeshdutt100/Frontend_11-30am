@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(29, 28, 28);
+            color: white;
+        }
+        .inputForm{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 300px;
+            height: 300px;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: auto;
+            background-color: rgb(63, 62, 62);
+        }
+        input{
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+  
+   <div class="inputForm">
+     <input type="number" id="firstInput" >
+
+    <input type="text" id="opInput">
+
+    <input type="number" id="secondInput">
+
+    <p id="result">loading...</p>
+    <input type="submit" onclick="fun()">
+    
+   </div>
+ 
+
+    <script>
+
+
+  
+
+  function fun(){
+      let firstInput =  Number(document.getElementById('firstInput').value);
+
+  let opInput =  document.getElementById('opInput').value;
+
+  let secondInput =  Number(document.getElementById('secondInput').value);
+  
+  let result = document.getElementById('result');
+
+  switch(opInput){
+    case '+' :result.innerHTML= `result ${firstInput + secondInput}` ;
+    break;
+    case '-' :result.innerHTML= `result ${firstInput - secondInput}` ;
+    break;
+    case '*' :result.innerHTML= `result ${firstInput * secondInput}` ;
+    break;
+    case '/' :result.innerHTML= `result ${firstInput / secondInput}` ;
+    break;
+    default:
+       result.innerHTML ="Invalid "
+  }
+    
+    
+  }
+
+    </script>
+
+
+</body>
+</html>
