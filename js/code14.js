@@ -2,9 +2,10 @@
 
 let userScore = 0
 let computerScore = 0
+let output  =  document.getElementById('output')
+
 
 function fun(user) {
-let output  =  document.getElementById('output')
 
 
   let arr = ["rock", "paper", "scissor"];
@@ -40,6 +41,14 @@ function score(){
     document.getElementById('userScore').innerHTML = `computer score ${computerScore}`
     document.getElementById('computerScore').innerHTML=`user score ${userScore}`
 
+}
+function reset(){
+    output.innerHTML="Value Reset"
+    userScore = 0
+    computerScore = 0
+    score();
+
+   
 }
 // fun();
 //   user
