@@ -90,6 +90,15 @@ let arr =[12,34,56,78,39,21,67,98,76,54,32,33]
 //     console.log(x);
     
 // }
-
+// for(let key of arr.keys()){
+//     console.log(key);
+    
+// }
+for(let value of arr.values()){
+    console.log(value);
+    
+}
 
 // console.log(output);
+
+
