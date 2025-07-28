@@ -38,7 +38,7 @@
 
 
 // 2 - Accessor 
-let arr1 = [22,1,2,34,5,6,22,7]
+// let arr1 = [22,1,2,34,5,6,22,7]
 // let arr2 = [434,5,6,7,65,4,56,54]
 
 // 0Concat()
@@ -57,4 +57,39 @@ let arr1 = [22,1,2,34,5,6,22,7]
 // let output  = arr1.slice(1,2)
 // 6 toString(start, end )
 // let output  = arr1.toString()
-console.log(output);
+// console.log(output);
+
+
+
+// 3 -Iteration s
+let arr =[12,34,56,78,39,21,67,98,76,54,32,33]
+// let sum = 0
+// for(let x  of arr){
+//     sum = sum + x;
+// }
+// console.log(sum);
+
+// let output  = arr.every((x)=>x % 2 == 0)
+// let output  = arr.some((x)=>x % 2 == 0)
+// let output  = arr.entries()
+// arr.entries()
+
+// for(let value of arr.entries()){
+// console.log(value);
+
+// }
+
+// let output  = arr.filter(x => x%2!=0);
+// let output  = arr.map(x => x*2);
+// let output  = arr.reduce((acc , num)=> acc + num);
+// let output  = arr.find(x => x%2==0);
+// let output  = arr.findIndex(x => x%2==0);
+// let output  = arr.forEach(x => x+2);
+// arr.forEach(x => console.log(x))
+// for(let x  of arr){
+//     console.log(x);
+    
+// }
+
+
+// console.log(output);
