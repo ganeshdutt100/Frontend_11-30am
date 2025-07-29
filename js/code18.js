@@ -11,3 +11,6 @@ let value  = {
 // console.log(output);
 let output  = Array.of('item1','item2','item3')
 console.log(output);
+
+
+// reduce((acu , cur)=>{ stm } )

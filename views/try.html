@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Tools</title>
+</head>
+<body>
+  <h2>🔧 Array Tools</h2>
+
+  <input type="text" id="arrayInput" placeholder="Enter numbers like 5,2,8,1" />
+  <br><br>
+
+  <button onclick="sortArray()">Sort</button>
+  <button onclick="filterEven()">Filter Even</button>
+  <button onclick="mapDouble()">Double</button>
+  <button onclick="reduceSum()">Sum</button>
+  <button onclick="reverseArray()">Reverse</button>
+
+  <h3>Output:</h3>
+  <p id="output">[ ]</p>
+
+  <script>
+    function getArray() {
+      const input = document.getElementById("arrayInput").value;
+      return input.split(",").map(Number);
+    }
+
+    function showOutput(result) {
+      document.getElementById("output").innerText = JSON.stringify(result);
+    }
+
+    function sortArray() {
+      const arr = getArray();
+      showOutput(arr.sort((a, b) => a - b));
+    }
+
+    function filterEven() {
+      const arr = getArray();
+      showOutput(arr.filter(num => num % 2 === 0));
+    }
+
+    function mapDouble() {
+      const arr = getArray();
+      showOutput(arr.map(num => num * 2));
+    }
+
+    function reduceSum() {
+      const arr = getArray();
+      showOutput("Sum = " + arr.reduce((sum, num) => sum + num, 0));
+    }
+
+    function reverseArray() {
+      const arr = getArray();
+      showOutput(arr.reverse());
+    }
+  </script>
+</body>
+</html>

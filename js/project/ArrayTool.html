@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Tools</h1>
+    <input type="text" id="arrayInput" placeholder="Enter numbers like 5,2,81,211">
+    <br> <br>
+    <button onclick="sortArray()">Sort</button>
+    <button onclick="filterOdd()">Odd</button>
+    <button onclick="filterEven()">Even</button>
+    <button onclick="Double()">Double</button>
+    <button onclick="Reverse()" >Reverse</button>
+    <button onclick="reduceSum()" >Sum</button>
+
+    <h2>Output</h2>
+    <h3 id="output">Loading...</h3>
+    <script>
+         
+        
+        function getArray(){
+            const input  =  document.getElementById('arrayInput').value;
+            return input.split(",").map(Number)
+            
+        }
+
+
+        function showOutput(result){
+          document.getElementById('output').innerHTML= result
+            
+        }
+        function sortArray(){
+    const  arr = getArray();
+    showOutput( arr.sort((a , b)=> a -b ))  
+
+        }
+
+
+        function filterEven(){
+            const  arr = getArray();
+            showOutput(arr.filter(num => num %2 == 0))
+        }
+        function filterOdd(){
+            const  arr = getArray();
+            showOutput(arr.filter(num => num % 2 != 0))
+        }
+        function Double(){
+            const  arr = getArray();
+            showOutput(arr.map(num => num * 2))
+        }
+        function Reverse(){
+            const  arr = getArray();
+            showOutput(arr.reverse())
+        }
+        function reduceSum(){
+            const  arr = getArray();
+            showOutput( "Sum : "+ arr.reduce((a ,b)=>a +b))
+        }
+    </script>
+</body>
+</html>
