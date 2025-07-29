@@ -62,7 +62,7 @@
 
 
 // 3 -Iteration s
-let arr =[12,34,56,78,39,21,67,98,76,54,32,33]
+// let arr =[12,34,56,78,39,21,67,98,76,54,32,33]
 // let sum = 0
 // for(let x  of arr){
 //     sum = sum + x;
@@ -94,10 +94,10 @@ let arr =[12,34,56,78,39,21,67,98,76,54,32,33]
 //     console.log(key);
     
 // }
-for(let value of arr.values()){
-    console.log(value);
+// for(let value of arr.values()){
+//     console.log(value);
     
-}
+// }
 
 // console.log(output);
 
