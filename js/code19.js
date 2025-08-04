@@ -4,7 +4,7 @@
 //     age : 20,
 //     address : "mumbai",
 //     phone : 1234567890,
-  
+
 // }
 // for(let key in person){
 //     console.log(key, " :  ",person[key]);
@@ -13,8 +13,6 @@
 // console.log("Age :", person.age);
 // console.log("Address :", person.address);
 // console.log("Name :", person["name"] ,\n, "Age :", person["age"]);
-
-
 
 // Object Constructor
 // function Person(name , age){
@@ -31,7 +29,6 @@
 // for(let key in person2){
 //     console.log(key, " :  ",person2[key]);
 // }
-
 
 // class Person{
 //     constructor(name , age){
@@ -60,3 +57,35 @@
 //  for(let key in student1){
 //     console.log(key, " :  ",student1[key]);
 //  }
+
+// Object methods
+// 1) Assign()
+//  Assign(target , source1, .....)
+
+// let target = { a: 1, b: 2, c: 3 };
+// let source = { a:10,d: 4, e: 5 };
+
+// const result   = Object.assign(target , source)
+// console.log(result);
+
+
+// let obj1 = {
+//     greet:"Hello"
+// }
+
+// let obj2 = Object.create(obj1)
+// obj2.name =  "Ganesh_Dutt"
+// obj2.age=34,
+// obj2.job = "Developer"
+
+
+// for(let newValue  in obj2){
+//     console.log(newValue , obj2[newValue]);
+// }
+
+// const value1={
+//     age:23
+// }
+// const value2= Object.freeze(value1);
+// value2.age = 34
+// console.log(value2.age);
