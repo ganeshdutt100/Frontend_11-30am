@@ -89,3 +89,43 @@
 // const value2= Object.freeze(value1);
 // value2.age = 34
 // console.log(value2.age);
+
+// const value ={a:1,b:23,c:45,d:6}
+// Object.freeze(value)
+// console.log(Object.isFrozen(value));
+
+
+// console.log(Object.is(5,5));
+// console.log(Object.is("5",5));
+// console.log(Object.is("5",'5'));
+// console.log(Object.is(null,null));
+// console.log(Object.is([],[]));
+// console.log(Object.is({},{}));
+// console.log(Object.is(NaN,NaN));
+// console.log(Object.is(undefined , undefined));
+// console.log(Object.is(0 , -0));
+
+// const value ={a:1,b:23,c:45,d:6}
+// Object.preventExtensions(value)
+
+// console.log(Object.isExtensible(value));
+
+
+
+// const value ={a:1,b:23,c:45,d:6}
+// console.log(Object.isSealed(value));
+// Object.seal(value)
+// console.log(Object.isSealed(value));
+// value.a="Ganesh"
+// console.log(value);
+
+
+let obj1 ={a:1,b:2}
+console.log(obj1);
+
+console.log(Object.values(obj1))
+
+
+
+
+
