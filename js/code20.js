@@ -39,11 +39,13 @@
 // console.log(value1 + " " + value2);
 
 
-let value  = "Hello World"
+// let value  = "Hello World"
 // console.log(value.toUpperCase());
 // console.log(value.toLowerCase());
 // let output = value.trim()
 // console.log(output.length);
-console.log(value.replace(/o/g, 'a'));
+// console.log(value.replace(/o/g, 'a'));
 
 
+
+ 
