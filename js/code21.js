@@ -27,14 +27,32 @@
 
 // 3
 
-function counter(str){
-let count  = 0;
-let vowels = "aeiou"
-for(let value of str){
-  if(vowels.includes(value)){
-    count++;
-  }
-}
-return count;
-}
-console.log(counter("Vaibhav"));
+// function counter(str){
+// let count  = 0;
+// let vowels = "aeiou"
+// for(let value of str){
+//   if(vowels.includes(value)){
+//     count++;
+//   }
+// }
+// return count;
+// }
+// console.log(counter("Vaibhav"));
+// let name = "Ganesh"
+
+// G  
+// A
+// N
+// E
+// S
+// H
+// HSENAG
+// function palindrome(str){
+//  let reversed = str.split("").reverse().join("");
+//  console.log(reversed);
+ 
+//  return str == reversed;
+// }
+
+
+// console.log(palindrome("Ganesh"));
