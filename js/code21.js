@@ -56,3 +56,10 @@
 
 
 // console.log(palindrome("Ganesh"));
+
+// 7  ganesh dutt  = > Ganesh Dutt
+function cptlz(str){
+    let mainValue  =  str.split(" ").map(value => value.charAt(0).toUpperCase()+ value.slice(1)).join(" ");
+    return mainValue
+}
+console.log(cptlz("ganesh dutt"));
