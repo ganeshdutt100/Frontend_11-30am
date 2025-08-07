@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            font-family: sans-serif;
+            color: yellow;
+            background-color: black;
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p id="demo">Lorem ipsum dolor sit amet.</p>
+    <button onclick="fun()">Click me </button> -->
+    
+<!--  
+    <h2 class="classDemo">Welcome </h2>
+    <p class="classDemo">Lorem ipsum dolor sit amet.</p>
+    <p class="classDemo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eius officiis ut sint? Qui, veritatis veniam debitis quis ipsa quasi quae accusamus nihil iste ullam iusto perferendis blanditiis aperiam perspiciatis.</p>
+    <button  onclick="fun()" >Click me</button> -->
+
+    <!-- <h2 class="classDemo">Welcome </h2>
+    <p class="classDemo">Lorem ipsum dolor sit amet.</p>
+    <p class="classDemo">Lorem ipsum dolor sit amet.</p>
+    <p class="classDemo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eius officiis ut sint? Qui, veritatis veniam debitis quis ipsa quasi quae accusamus nihil iste ullam iusto perferendis blanditiis aperiam perspiciatis.</p>
+    <button  onclick="fun()" >Click me</button> -->
+
+
+
+     <h2 class="classDemo">Welcome </h2>
+    <p class="classDemo">Lorem ipsum dolor sit amet.</p>
+    <p class="classDemo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eius officiis ut sint? Qui, veritatis veniam debitis quis ipsa quasi quae accusamus nihil iste ullam iusto perferendis blanditiis aperiam perspiciatis.</p>
+    <button  onclick="fun()" >Click me</button> 
+    <script>
+
+function fun(){
+    // let firstValue  = document.querySelector('.classDemo') 
+
+    // firstValue.style.color="red"
+
+
+      let allValue  = document.querySelectorAll('.classDemo')
+      console.log(allValue);
+
+      allValue.forEach((x)=>{
+        x.style.color="darkblue"
+      })
+       
+}
+
+        // function fun(){
+        //     let para =  document.getElementById('demo')
+        //     para.innerHTML= "<h1>Hello World </h1>"
+
+        //     para.classList.add('text')
+
+            
+        // }
+
+        // function fun(){
+            // let element  = document.getElementsByClassName('classDemo')
+
+            // let element  = document.getElementsByTagName('p')
+            // console.log(element);
+            
+            // for(let i=0 ; i <element.length; i++){
+            //     element[i].style.color="green"
+            // }
+        // }
+    </script>
+</body>
+</html>

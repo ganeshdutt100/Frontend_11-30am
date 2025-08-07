@@ -18,7 +18,7 @@
 // Expected Output: "Hello World"
  
 //  8. How to find the number of occurrences of a substring inside a string?
-// Example: Count how many times "" occurs in " is love,  is powerful"
+// Example: Count how many times "" occurs in " js is love, js is powerful"
  
 //  9. What is the difference between substring(), substr(), and slice() in strings?
 //  10. Write a JavaScript program to reverse a string.
@@ -58,8 +58,15 @@
 // console.log(palindrome("Ganesh"));
 
 // 7  ganesh dutt  = > Ganesh Dutt
-function cptlz(str){
-    let mainValue  =  str.split(" ").map(value => value.charAt(0).toUpperCase()+ value.slice(1)).join(" ");
-    return mainValue
-}
-console.log(cptlz("ganesh dutt"));
+// function cptlz(str){
+//     let mainValue  =  str.split(" ").map(value => value.charAt(0).toUpperCase()+ value.slice(1)).join(" ");
+//     return mainValue
+// }
+// console.log(cptlz("ganesh dutt"));
+
+let string  ="js is love, js is powerful js "
+let  value  = "is"
+
+let count  = string.split(value).length-1;
+console.log(count);
+
