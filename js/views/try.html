@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click the Box Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    #game-area {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: #f3f3f3;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #score-board {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="game-area">
+  <div id="score-board">Score: 0</div>
+</div>
+
+<script>
+  let score = 0;
+  const gameArea = document.getElementById("game-area");
+  const scoreBoard = document.getElementById("score-board");
+
+  function spawnBox() {
+    const box = document.createElement("div");
+    box.classList.add("box");
+
+    // Set random position
+    const maxX = gameArea.clientWidth - 50;
+    const maxY = gameArea.clientHeight - 50;
+
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+
+    box.style.left = `${randomX}px`;
+    box.style.top = `${randomY}px`;
+
+    // When clicked, increase score
+    box.addEventListener("click", () => {
+      score++;
+      scoreBoard.textContent = `Score: ${score}`;
+      gameArea.removeChild(box);
+    });
+
+    // Add box to game area
+    gameArea.appendChild(box);
+
+    // Remove the box after 2 seconds if not clicked
+    setTimeout(() => {
+      if (gameArea.contains(box)) {
+        gameArea.removeChild(box);
+      }
+    }, 2000);
+  }
+
+  // Spawn a new box every 1.5 seconds
+  setInterval(spawnBox, 1500);
+</script>
+
+</body>
+</html>
