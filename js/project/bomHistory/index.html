@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body { font-family: Arial; text-align: center; background: #f4f4f4; padding-top: 50px; }
+        .container { background: #fff; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        button, a { padding: 10px 20px; margin: 5px; text-decoration: none; background: #3498db; color: white; border-radius: 5px; border: none; cursor: pointer; }
+        button:hover, a:hover { background: #2980b9; }
+        p { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Home page </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        <a href="page2.html">Page 2</a> <br> <br>
+        <button onclick="goBack()">goBack</button>
+        <button onclick="goForward()">goForward</button>
+        <button onclick="refreshPage()">refreshPag</button>
+
+        <p id="historyInfo"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

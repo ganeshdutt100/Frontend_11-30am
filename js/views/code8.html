@@ -7,6 +7,12 @@
 </head>
 <body>
     <!-- Navigator Object: -->
+     <button onclick="goBack()">Go Back</button>
+     <button>1</button>
+     <button>2</button>
+     <button>3</button>
+     <button>4</button>
+     <button onclick="goForward()">Go Forward</button>
      <script>
         // console.log("Navigator Object:");
         // console.log(navigator);
@@ -20,14 +26,25 @@
         // console.log(navigator.javaEnabled());
 
 
-        console.log("Screen width:", window.screen.width);
-console.log("Screen height:", window.screen.height);
-console.log("Available width:", window.screen.availWidth);
-console.log("Available height:", window.screen.availHeight);
-console.log("Color depth:", window.screen.colorDepth);
-console.log("Pixel depth:", window.screen.pixelDepth);
-console.log("Orientation:", window.screen.orientation.type);
+//         console.log("Screen width:", window.screen.width);
+// console.log("Screen height:", window.screen.height);
+// console.log("Available width:", window.screen.availWidth);
+// console.log("Available height:", window.screen.availHeight);
+// console.log("Color depth:", window.screen.colorDepth);
+// console.log("Pixel depth:", window.screen.pixelDepth);
+// console.log("Orientation:", window.screen.orientation.type);
         
+function goBack(){
+    window.history.back()
+}
+function goForward(){
+    window.history.forward()
+}
+function fun(){
+    window.history.go(-2)
+}
+
+
      </script>
 </body>
 </html>
