@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation </title>
+</head>
+<body>
+    <form action="">
+
+        <label for="">Enter your name </label>
+        <input type="text" id="name" name="name" > 
+        <span id="nameAlert"></span><br> <br>
+
+
+        <label for="">Enter your email </label>
+        <input type="email" id="email" name="name" > <span id="emailAlert"></span> <br> <br>
+     
+           <label for="">Enter your Password </label>
+        <input type="password" id="password" name="name" > <span id="passwordAlert"></span> <br> <br>
+        <label for="">Enter your address </label>
+        <textarea id="address" name="address" ></textarea> <br> <br>
+     
+        <input type="submit" onclick=" return formValidation()">
+</form>
+
+<script>
+
+
+    
+
+function formValidation(){
+        let name  =  document.querySelector('#name').value;
+    let email  =  document.querySelector('#email').value;
+    let password =  document.querySelector('#password').value;
+  
+    
+
+    let nameAlert =  document.querySelector('#nameAlert')
+    let emailAlert =  document.querySelector('#emailAlert')
+    let passwordAlert = document.querySelector('#passwordAlert');
+
+nameAlert.innerHTML =""
+emailAlert.innerHTML =""
+passwordAlert.innerHTML =""
+
+ if(name.trim() === ""){
+nameAlert.innerHTML ="Name can't be Empty "
+nameAlert.style.color="red"
+return false
+ }
+else if(email.trim() === ""){
+emailAlert.innerHTML ="Email can't be Empty "
+emailAlert.style.color="red"
+return false
+ }
+ 
+else if(password.trim() === "" || password.length < 5){
+passwordAlert.innerHTML ="Password must be at least 5 characters"
+passwordAlert.style.color="red"
+return false
+ }
+
+
+
+ return true
+
+}
+</script>
+</body>
+</html>
