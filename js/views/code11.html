@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validatePassword(pass){
+        let minLength= 8;
+        let maxLength= 12;
+
+        let upperCaseValue = /[A-Z]/ 
+        let lowerCaseValue = /[a-z]/ 
+        let numberValue = /[0-9]/ 
+        let specialCharValue = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/ 
+
+        if(pass.length < minLength  || pass.length > maxLength){
+            console.log('password must be between 8 to 12 ');
+            
+        }
+        if(!upperCaseValue.test(pass)){
+            console.log('Password must contain at least one uppercase letter');
+            
+        }
+        else if(!lowerCaseValue.test(pass)){
+            console.log('Password must contain at least one lowercase letter');
+            
+        }
+        else if(!numberValue.test(pass)){
+            console.log('Password must contain at least one number');
+            
+        }
+        else if(!specialCharValue.test(pass)){
+            console.log('Password must contain at least one special character');
+            
+        }
+        else{
+            console.log('Password is valid');
+        }
+    }
+
+     validatePassword("Aa@123456532")
+    </script>
+</body>
+</html>
