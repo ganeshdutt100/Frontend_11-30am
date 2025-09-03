@@ -1,11 +1,11 @@
 
 import './App.css'
+import Code1 from './components/Code1'
 
 function App() {
   return (
  <>
-    <h1>Ganesh Dutt</h1>
-   <h2>React</h2>
+   <Code1></Code1>
  </>
   )
 }
