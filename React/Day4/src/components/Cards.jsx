@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Cards = ({heading , para}) => {
+const Cards = ({heading , para ,imgSrc}) => {
   return (
     <div>
 
 
     
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="blog" />
+          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={imgSrc} alt="blog" />
           <div className="p-6">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{heading} </h1>
