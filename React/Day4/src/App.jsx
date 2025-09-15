@@ -4,8 +4,9 @@ import Cards from './components/Cards'
 import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
+import ToDoList from './components/ToDoList'
 import UseState from './components/UseState'
-import './style.css'
+// import './style.css'
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
 
      </div>
      <Footer/> */}
-     <UseState/>
+     {/* <UseState/> */}
+     <ToDoList/>
     </>
   )
 }
