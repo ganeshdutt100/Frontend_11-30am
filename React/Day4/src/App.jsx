@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import ToDoList from './components/ToDoList'
 import UseEffect from './components/UseEffect'
+import UseEffectCode2 from './components/UseEffectCode2'
 import UseState from './components/UseState'
 // import './style.css'
 
@@ -32,7 +33,8 @@ function App() {
      <Footer/> */}
      {/* <UseState/> */}
      {/* <ToDoList/> */}
-     <UseEffect/>
+     {/* <UseEffect/> */}
+     <UseEffectCode2/>
     </>
   )
 }
