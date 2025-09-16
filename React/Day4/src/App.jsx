@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import ToDoList from './components/ToDoList'
 import UseEffect from './components/UseEffect'
 import UseEffectCode2 from './components/UseEffectCode2'
+import UseEffectCode3 from './components/UseEffectCode3'
 import UseState from './components/UseState'
 // import './style.css'
 
@@ -34,7 +35,9 @@ function App() {
      {/* <UseState/> */}
      {/* <ToDoList/> */}
      {/* <UseEffect/> */}
-     <UseEffectCode2/>
+     {/* <UseEffectCode2/> */}
+     <UseEffectCode3/>
+      
     </>
   )
 }
