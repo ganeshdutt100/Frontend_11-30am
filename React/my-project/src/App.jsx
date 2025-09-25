@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 import Cards from './components/Cards'
 // import Child from './components/Child'
 import CourseCards from './components/CourseCards'
@@ -14,6 +15,9 @@ import UserContext from './LogIn/UserContext'
 import Profile from './LogIn/Profile'
 import Navbar from './LogIn/Navbar'
 import Login from './LogIn/Login'
+import Home from './Router/Home'
+import About from './Router/About'
+import Contact from './Router/Contact'
 
 function App() {
  const [count, setCount] = useState(0)
@@ -21,6 +25,20 @@ function App() {
 
   return (
     <>
+
+   <BrowserRouter>
+   <nav className='bg-black text-white flex justify-around'>
+    <Link to="/" >Home</Link>
+    <Link to="/about" >About</Link>
+    <Link to="/contact" >Contact</Link>
+   </nav>
+      <Routes>
+        <Route path="/" element={<Home/>} ></Route>
+        <Route path="/about" element={<About/>} ></Route>
+        <Route path="/contact" element={<Contact/>} ></Route>
+      </Routes>
+   </BrowserRouter>
+
      {/* <Navbar/> */}
      {/* <Hero/> */}
      {/* <Cards/> */}
@@ -43,7 +61,7 @@ function App() {
   </div>
 </CountContext.Provider> */}
 
-<UserContext.Provider  value={{user, setUser}} >
+{/* <UserContext.Provider  value={{user, setUser}} >
   <h1 className='text-2xl font-bold'>Login Page </h1>
   
   <Navbar/>
@@ -51,7 +69,7 @@ function App() {
   {user ? <Profile/>:<Login/>}
 
 
-</UserContext.Provider>
+</UserContext.Provider> */}
 
 
 
@@ -60,3 +78,9 @@ function App() {
 }
 
 export default App
+
+
+// BrowserRouter = "Gate " -> Router ka entery point 
+// Routes  = "Container" -> value store rehti hain  -> routes ki list 
+// Route = "Rule" -> kisi bhi URL pe kya show karna hain 
+// Link -> "Shortcut" -> (Navigate karne ke liye ) 
